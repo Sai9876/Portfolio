@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sai — Fullstack Dev</title>
+
+  <!-- Tailwind CDN for quick styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Simple meta & favicon -->
+  <meta name="description" content="Sai — Python Fullstack Developer. Portfolio." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
+  <style>
+    /* small custom tweaks */
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); }
+    .accent { text-decoration-color: #7c3aed; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-gray-900 via-slate-900 to-gray-800 text-slate-100 antialiased">
+
+  <!-- NAV -->
+  <header class="fixed w-full z-30">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="font-semibold text-lg">Sai<span class="text-violet-400">.</span></a>
+      <div class="hidden md:flex gap-6 items-center text-sm">
+        <a href="#about" class="hover:text-violet-300">About</a>
+        <a href="#projects" class="hover:text-violet-300">Projects</a>
+        <a href="#skills" class="hover:text-violet-300">Skills</a>
+        <a href="#contact" class="hover:text-violet-300">Contact</a>
+        <a href="#" id="resumeBtn" class="px-3 py-1 rounded-md border border-violet-500 text-sm">Download CV</a>
+      </div>
+
+      <!-- mobile menu toggle -->
+      <button id="navToggle" class="md:hidden p-2 rounded-md glass">
+        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+
+    <!-- mobile nav -->
+    <div id="mobileNav" class="hidden md:hidden bg-slate-900/70 backdrop-blur glass px-6 py-4">
+      <a href="#about" class="block py-2">About</a>
+      <a href="#projects" class="block py-2">Projects</a>
+      <a href="#skills" class="block py-2">Skills</a>
+      <a href="#contact" class="block py-2">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="pt-28">
+    <section class="max-w-6xl mx-auto px-6 pb-12">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <p class="text-violet-300 font-medium">Hi, I'm Sai — Fullstack Developer</p>
+          <h1 class="text-4xl md:text-5xl font-bold mt-3 leading-tight">I build clean, scalable web apps with <span class="accent">Python & React</span></h1>
+          <p class="mt-4 text-slate-300 max-w-xl">I specialise in Django/Flask backends, REST APIs, and React frontends. Currently preparing for interviews and building production-ready projects.</p>
+
+          <div class="mt-6 flex gap-3">
+            <a href="#projects" class="px-4 py-2 rounded-md bg-violet-500 hover:bg-violet-600">See Projects</a>
+            <a href="#contact" class="px-4 py-2 rounded-md border border-slate-600">Contact</a>
+          </div>
+
+          <div class="mt-6 text-sm text-slate-400">
+            <span class="font-medium">Location:</span> Coimbatore · <span class="font-medium">Open to:</span> Remote / On-site
+          </div>
+        </div>
+
+        <!-- hero card / avatar -->
+        <div class="flex justify-center md:justify-end">
+          <div class="w-64 h-64 rounded-2xl glass p-4 flex flex-col items-center justify-center">
+            <div class="w-28 h-28 rounded-full bg-gradient-to-tr from-violet-500 to-pink-500 flex items-center justify-center text-4xl">👨‍💻</div>
+            <h3 class="mt-4 font-semibold">Sai</h3>
+            <p class="text-sm text-slate-300">Python • Django • Flask • React • MySQL</p>
+            <div class="mt-3 flex gap-3 text-xs">
+              <span class="px-2 py-1 rounded bg-slate-800">Open to work</span>
+              <span class="px-2 py-1 rounded bg-slate-800">Interview Ready</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-10">
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+        <div class="md:col-span-2">
+          <h2 class="text-2xl font-bold">About me</h2>
+          <p class="mt-4 text-slate-300">I'm a Python fullstack developer — backend-first, frontend-friendly. I build APIs, dashboards, and small desktop tools. Favourite: clean code, TDD, and optimizing queries.</p>
+
+          <ul class="mt-4 grid sm:grid-cols-2 gap-2 text-slate-300">
+            <li>✅ Django REST Framework</li>
+            <li>✅ Flask microservices</li>
+            <li>✅ React (hooks, SPA)</li>
+            <li>✅ MySQL & ORM</li>
+          </ul>
+        </div>
+
+        <div class="glass p-4 rounded-lg">
+          <h3 class="font-semibold">Quick stats</h3>
+          <div class="mt-3 text-sm text-slate-300 space-y-2">
+            <div>💼 Experience: 2+ years</div>
+            <div>🧠 Strengths: APIs, debugging, interviews</div>
+            <div>⚙️ Tools: Git, Docker, Postman</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-10">
+      <h2 class="text-2xl font-bold">Selected Projects</h2>
+      <p class="text-slate-400 mt-2">(Click cards for repo / demo links — replace with your links)</p>
+
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project card template: duplicate & replace -->
+        <article class="bg-slate-900/60 p-4 rounded-xl glass hover:scale-102 transition-transform">
+          <h3 class="font-semibold">Bus Ticketing App</h3>
+          <p class="text-sm text-slate-300 mt-2">Tkinter desktop app with QR & voice input — PDF save, MySQL storage.</p>
+          <div class="mt-3 flex justify-between items-center text-xs text-slate-400">
+            <span>Python • Tkinter</span>
+            <a href="#" class="underline">Repo</a>
+          </div>
+        </article>
+
+        <article class="bg-slate-900/60 p-4 rounded-xl glass">
+          <h3 class="font-semibold">Admin Dashboard</h3>
+          <p class="text-sm text-slate-300 mt-2">Django + React dashboard with auth & analytics charts.</p>
+          <div class="mt-3 flex justify-between items-center text-xs text-slate-400">
+            <span>Django • React</span>
+            <a href="#" class="underline">Demo</a>
+          </div>
+        </article>
+
+        <article class="bg-slate-900/60 p-4 rounded-xl glass">
+          <h3 class="font-semibold">Portfolio Website</h3>
+          <p class="text-sm text-slate-300 mt-2">This site — simple, responsive, deployable on Netlify/Vercel.</p>
+          <div class="mt-3 flex justify-between items-center text-xs text-slate-400">
+            <span>HTML • Tailwind</span>
+            <a href="#" class="underline">Repo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-10">
+      <h2 class="text-2xl font-bold">Skills</h2>
+      <div class="mt-4 grid sm:grid-cols-2 gap-6">
+        <div class="bg-slate-900/50 p-4 rounded-lg glass">
+          <h4 class="font-semibold">Backend</h4>
+          <p class="text-slate-300 mt-2">Django, Flask, DRF, SQL, ORM, REST, JWT</p>
+        </div>
+        <div class="bg-slate-900/50 p-4 rounded-lg glass">
+          <h4 class="font-semibold">Frontend</h4>
+          <p class="text-slate-300 mt-2">React, HTML, CSS, Tailwind, Fetch/Axios</p>
+        </div>
+        <div class="bg-slate-900/50 p-4 rounded-lg glass">
+          <h4 class="font-semibold">Tools</h4>
+          <p class="text-slate-300 mt-2">Git, Docker, CI/CD, MySQL, Postman</p>
+        </div>
+        <div class="bg-slate-900/50 p-4 rounded-lg glass">
+          <h4 class="font-semibold">Interview Prep</h4>
+          <p class="text-slate-300 mt-2">DSA basics, system design primer, aptitude</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-10">
+      <div class="bg-slate-900/60 glass rounded-lg p-6">
+        <h2 class="text-2xl font-bold">Get in touch</h2>
+        <p class="text-slate-300 mt-2">Email / LinkedIn / Github links — replace below.</p>
+
+        <form id="contactForm" class="mt-4 grid gap-3 md:grid-cols-2">
+          <input required name="name" placeholder="Your name" class="p-3 rounded bg-slate-800 border border-slate-700" />
+          <input required name="email" placeholder="Your email" class="p-3 rounded bg-slate-800 border border-slate-700" />
+          <input name="subject" placeholder="Subject" class="p-3 rounded bg-slate-800 border border-slate-700 md:col-span-2" />
+          <textarea name="message" placeholder="Message" class="p-3 rounded bg-slate-800 border border-slate-700 md:col-span-2"></textarea>
+
+          <div class="md:col-span-2 flex gap-3 items-center">
+            <button type="submit" class="px-4 py-2 rounded bg-violet-500">Send</button>
+            <div id="formMsg" class="text-sm text-slate-300"></div>
+          </div>
+        </form>
+
+        <div class="mt-6 text-slate-400 text-sm">
+          <div>📧 sai@example.com</div>
+          <div>🔗 <a href="#" class="underline">github.com/youruser</a> · <a href="#" class="underline">linkedin.com/in/youruser</a></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="max-w-6xl mx-auto px-6 py-8 text-center text-slate-500 text-sm">
+      © <span id="year"></span> Sai — Built with ❤
+    </footer>
+  </main>
+
+  <script>
+    // small interactivity: mobile nav toggle + resume download + form handler
+    const navToggle = document.getElementById('navToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    navToggle.addEventListener('click', ()=> mobileNav.classList.toggle('hidden'));
+
+    // resume button: set your resume file or external link
+    document.getElementById('resumeBtn').addEventListener('click', (e)=>{
+      e.preventDefault();
+      // replace with your actual resume path or URL
+      const resumeUrl = 'resume.pdf';
+      // quick download
+      const a = document.createElement('a');
+      a.href = resumeUrl;
+      a.download = 'Sai_Resume.pdf';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    });
+
+    // simple contact form (client-side only) — replace with backend endpoint if available
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const formMsg = document.getElementById('formMsg');
+      formMsg.textContent = 'Sending...';
+      setTimeout(()=> {
+        formMsg.textContent = 'Message sent (demo). Replace with real endpoint.';
+        this.reset();
+      }, 800);
+    });
+
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

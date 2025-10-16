@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sairam Vijayakumar | Portfolio</title>
+  <meta name="description" content="Software Developer portfolio - Sairam Vijayakumar">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/img/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- ===== Header / Nav ===== -->
+  <header class="site-header" role="banner">
+    <a href="#home" class="logo">Sai's<span> Portfolio</span></a>
+
+    <button id="navToggle" class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="themeToggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section id="home" class="hero section">
+    <video autoplay muted loop id="bg-video" aria-hidden="true">
+      <source src="assets/images/bg_video6.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <div class="hero-inner container reveal">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1 class="title">Sairam <span>Vijayakumar</span></h1>
+        <h2 class="typewriter" aria-live="polite">
+          <span id="typewriter"></span><span class="caret" aria-hidden="true"></span>
+        </h2>
+        <p class="sub">
+          Building modern web experiences — Software Developer focused on Python Full-Stack & real-world problem solving.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener">View Resume</a>
+          <a class="btn outline" href="https://github.com/your-github" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="photo-wrap glass">
+          <!-- keep your base64 image or replace with actual headshot -->
+          <img src="data:image/jpeg;base64,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" alt="Sairam Vijayakumar" />
+        </div>
+
+        <div class="floating-badges" aria-hidden="true">
+          <span>🐍 Python</span>
+          <span>🧠 Logic</span>
+          <span>🧩 Problem Solving</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- minimal confetti container -->
+    <div id="confetti" aria-hidden="true"></div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="section">
+    <div class="container reveal">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="grid cards">
+        <article class="card glass">
+          <h3>Frontend</h3>
+          <ul class="tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+          </ul>
+          <p>Clean UI, responsive layouts & component driven design.</p>
+        </article>
+
+        <article class="card glass">
+          <h3>Backend</h3>
+          <ul class="tags">
+            <li>Python</li>
+            <li>MySQL</li>
+          </ul>
+          <p>APIs, data handling & robust business logic.</p>
+        </article>
+
+        <article class="card glass">
+          <h3>Tools</h3>
+          <ul class="tags">
+            <li>GitHub</li>
+            <li>VS Code</li>
+            <li>Jupyter</li>
+          </ul>
+          <p> debugging & fast iteration.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="section alt">
+    <div class="container about reveal">
+      <div class="about-text">
+        <h2 class="section-title">My Story</h2>
+        <p>
+          I’m <b>Sairam Vijayakumar</b>, a B.E. Computer Science graduate and a
+          <b>Python Full-Stack</b> trainee. I love building useful software and solving tough problems.
+        </p>
+        <p>
+          Strengths: <b>problem-solving</b>, <b>logical thinking</b> and delivering quality solutions.
+        </p>
+      </div>
+      <div class="about-cards">
+        <div class="mini-card glass">
+          <span>💡</span>
+          <p>Curious & always learning</p>
+        </div>
+        <div class="mini-card glass">
+          <span>⚙️</span>
+          <p>Builds practical solutions</p>
+        </div>
+        <div class="mini-card glass">
+          <span>🚀</span>
+          <p>Focus on impact</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects" class="section">
+    <div class="container reveal">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="grid projects">
+        <article class="project-card glass">
+          <div class="thumb">
+            <img src="assets/images/bus_thumbnail.png" alt="Smart Bus Ticket System">
+          </div>
+          <div class="project-body">
+            <h3>🎟️ Smart Bus Ticket System</h3>
+            <p>
+              A Tkinter desktop app for digital bus ticketing: QR payments, PDF tickets, MySQL storage and voice input.
+            </p>
+            <div class="chips">
+              <span>Python</span><span>Tkinter</span><span>MySQL</span><span>QR</span>
+            </div>
+            <div class="actions">
+              <a class="btn small" href="https://github.com/your-github/smart-bus-ticket" target="_blank" rel="noopener">View Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Education ===== -->
+  <section id="education" class="section alt">
+    <div class="container reveal">
+      <h2 class="section-title">Education</h2>
+
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-content glass">
+            <p class="t-time">Nov 2021 – May 2025</p>
+            <h4>United Institute Of Technology</h4>
+            <p>B.E Computer Science and Engineering — <b>CGPA 7.75</b></p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-content glass">
+            <p class="t-time">Jun 2019 – Mar 2021</p>
+            <h4>Maha Jana Higher Secondary School</h4>
+            <p>Higher Secondary School Certificate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section">
+    <div class="container reveal">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-wrap">
+        <div class="contact-card glass">
+          <h3>Get in touch</h3>
+          <p>📞 <b>+91 86104 32033</b></p>
+          <p>📧 <a style="color:inherit" href="mailto:sairamvijay9876@gmail.com">sairamvijay9876@gmail.com</a></p>
+          <div class="socials" aria-label="social links">
+            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/your-github" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://leetcode.com/u/your-leetcode" target="_blank" aria-label="LeetCode"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form glass" aria-label="Contact form">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span>Phone</span>
+            <input type="text" name="phone" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © <span id="year"></span> • Created By <b>Sai</b>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

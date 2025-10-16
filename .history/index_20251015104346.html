@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai | Full Stack Developer ⚡</title>
+
+  <link rel="stylesheet" href="assets/" />
+  <link rel="icon" href="assets/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/a2e0e6f6b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="assets/bg.mp4" type="video/mp4">
+  </video>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="#" class="logo">Sai<span>Dev</span></a>
+    <button id="menu-btn" class="menu-btn">☰</button>
+    <nav>
+      <ul class="nav">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="themeToggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero section reveal" id="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h1 class="title glow">Hi, I'm <span>Sai</span></h1>
+        <p class="typewriter">I'm a <span id="typewriter"></span><span class="caret"></span></p>
+        <p class="sub">I build full-stack applications that blend design, performance, and user experience — with a spark of AI magic ⚡</p>
+        <div class="cta">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn outline">Let's Connect</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-wrap glow-border">
+          <img src="assets/profile.jpg" alt="Sai photo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section reveal" id="about">
+    <div class="container about">
+      <div>
+        <h2 class="section-title glow">About Me</h2>
+        <p class="sub">
+          Passionate developer who thrives on creating clean, responsive, and scalable web solutions.
+          I specialize in Python Full Stack, modern JavaScript frameworks, and crafting experiences that feel alive ✨
+        </p>
+      </div>
+      <div class="about-cards">
+        <div class="mini-card glow-hover">
+          <span>⚙️</span> <p>Full Stack Web Development</p>
+        </div>
+        <div class="mini-card glow-hover">
+          <span>🧠</span> <p>AI / ML Integrations</p>
+        </div>
+        <div class="mini-card glow-hover">
+          <span>🚀</span> <p>Optimized for Performance</p>
+        </div>
+        <div class="mini-card glow-hover">
+          <span>🎨</span> <p>Creative Front-End Designs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section alt reveal" id="projects">
+    <div class="container">
+      <h2 class="section-title glow">Projects</h2>
+      <div class="grid projects">
+        <div class="project-card glow-hover">
+          <div class="thumb"><img src="assets/project1.jpg" alt="Project 1"></div>
+          <div class="project-body">
+            <h3>HireHive Platform</h3>
+            <p>Recruitment web app built with Django + React, optimizing candidate management and analytics.</p>
+            <div class="actions">
+              <a href="#" class="btn small outline">Live Demo</a>
+              <a href="#" class="btn small primary">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glow-hover">
+          <div class="thumb"><img src="assets/project2.jpg" alt="Project 2"></div>
+          <div class="project-body">
+            <h3>AI Resume Analyzer</h3>
+            <p>Smart ATS engine that analyzes resumes with NLP and predicts job fit scores in seconds.</p>
+            <div class="actions">
+              <a href="#" class="btn small outline">Demo</a>
+              <a href="#" class="btn small primary">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section reveal" id="contact">
+    <div class="container contact-wrap">
+      <div class="contact-card glow-hover">
+        <h2 class="section-title glow">Let's Connect</h2>
+        <p class="sub">I'm open to collaborations, freelance projects, and exciting opportunities.</p>
+        <div class="socials">
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://leetcode.com" target="_blank"><i class="fas fa-code"></i></a>
+        </div>
+      </div>
+
+      <form id="contact-form" class="contact-form">
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button class="btn primary" type="submit">Send Message</button>
+        <div id="form-status" class="form-status"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Confetti Layer -->
+  <div id="confetti"></div>
+
+  <!-- Footer -->
+  <footer class="footer reveal">
+    <p>© <span id="year"></span> Sai | Crafted with 💙 and JavaScript ⚡</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="app.js"></script>
+</body>
+</html>

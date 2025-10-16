@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sairam V — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#6ee7b7; --glass: rgba(255,255,255,0.04);
+      --max-w:1100px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#071226 0%, #071a2a 60%);}
+    .wrap{max-width:var(--max-w);margin:32px auto;padding:28px;border-radius:18px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 10px 30px rgba(2,6,23,0.6);backdrop-filter: blur(6px);} 
+    header{display:flex;gap:18px;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:14px;align-items:center}
+    .avatar{width:84px;height:84px;border-radius:14px;background:linear-gradient(135deg,var(--accent), #60a5fa);display:flex;align-items:center;justify-content:center;font-weight:800;color:#04203a;font-size:28px}
+    h1{font-size:20px;margin:0}
+    .title{font-weight:700;color:#cfeef1}
+    .subtitle{font-size:13px;color:var(--muted);margin-top:4px}
+    nav{display:flex;gap:10px}
+    a.btn{padding:8px 12px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--accent);text-decoration:none;font-weight:600;font-size:13px}
+
+    main{display:grid;grid-template-columns:1fr 360px;gap:22px;margin-top:20px}
+    .card{background:var(--card);padding:18px;border-radius:14px;border:1px solid rgba(255,255,255,0.02)}
+    .about p{color:var(--muted);line-height:1.5;margin:0}
+    .section-title{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+    .pill{background:var(--glass);padding:6px 10px;border-radius:999px;font-weight:600;font-size:12px;color:var(--accent)}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:linear-gradient(90deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:8px 10px;border-radius:10px;font-weight:600;color:#dbeef0;font-size:13px}
+
+    .projects{display:flex;flex-direction:column;gap:12px}
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));border:1px solid rgba(255,255,255,0.02)}
+    .project h4{margin:0 0 6px 0}
+    .meta{font-size:13px;color:var(--muted)}
+
+    aside .contact-list{display:flex;flex-direction:column;gap:8px}
+    .link{display:flex;gap:10px;align-items:center}
+    .link a{color:#cfeef1;text-decoration:none;font-weight:600}
+
+    footer{display:flex;justify-content:space-between;align-items:center;margin-top:18px;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:980px){main{grid-template-columns:1fr} .avatar{width:72px;height:72px}}
+
+    /* small interactions */
+    .copy{cursor:pointer;font-size:12px;padding:6px 8px;border-radius:8px;border:1px dashed rgba(255,255,255,0.03);color:var(--muted)}
+    .theme-toggle{padding:8px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.04);cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="avatar">SV</div>
+        <div>
+          <h1 class="title">Sairam V <span style="font-weight:500;color:var(--muted);">— Python Full Stack Developer</span></h1>
+          <div class="subtitle">Core Python • Django • Flask • React.js • MySQL</div>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#contact">Contact</a>
+        <button class="theme-toggle" id="toggleTheme">Toggle</button>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="card about">
+          <div class="section-title"><span class="pill">Summary</span></div>
+          <p style="margin-bottom:12px">Python Full Stack Developer skilled in Core Python, Django REST Framework, Flask, React.js, and MySQL. Experienced building scalable web & desktop applications with authentication, API integration and automation. Strong debugging and deployment skills.</p>
+
+          <div class="section-title"><span class="pill">Skills</span></div>
+          <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">Django</div>
+            <div class="skill">Django REST</div>
+            <div class="skill">Flask</div>
+            <div class="skill">React.js</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">HTML &amp; CSS</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Git / GitHub</div>
+            <div class="skill">Celery &amp; Redis</div>
+          </div>
+
+          <div style="height:14px"></div>
+
+          <div class="section-title"><span class="pill">Experience &amp; Education</span></div>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <div class="meta"><strong>Refinement Software Solution</strong> — Full Stack Developer (05/2025 – 09/2025) — Completed hands-on Full Stack course</div>
+            <div class="meta"><strong>B.E Computer Science</strong>, United Institute of Technology, Coimbatore (09/2021 – 09/2025). CGPA 7.7</div>
+          </div>
+        </div>
+
+        <div id="projects" class="card" style="margin-top:14px">
+          <div class="section-title"><span class="pill">Selected Projects</span></div>
+          <div class="projects">
+            <div class="project">
+              <h4>HireHive — Django + React (Fullstack)</h4>
+              <div class="meta">JWT authentication, role-based dashboards, resume parsing, Celery + Redis + OpenAI features. Deployed with automated pipelines.</div>
+            </div>
+            <div class="project">
+              <h4>Smart Bus Ticketing System — Desktop App</h4>
+              <div class="meta">Tkinter + MySQL. QR payment, PDF ticket generation, peak-hour fare automation, voice recognition input.</div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card">
+          <div class="section-title"><span class="pill">Contact</span></div>
+          <div class="contact-list" id="contact">
+            <div class="link"><strong>Email:</strong>&nbsp;<a href="mailto:sairamvijay9876@gmail.com">sairamvijay9876@gmail.com</a></div>
+            <div class="link"><strong>Phone:</strong>&nbsp;<a href="tel:8610432033">+91 86104 32033</a></div>
+            <div class="link"><strong>Website:</strong>&nbsp;<a href="https://avanlo.com/sai" target="_blank">avanlo.com/sai</a></div>
+            <div class="link"><strong>LinkedIn:</strong>&nbsp;<a href="https://www.linkedin.com/in/sairam-v-634315285/" target="_blank">linkedin.com/in/sairam-v-634315285</a></div>
+            <div class="link"><strong>GitHub:</strong>&nbsp;<a href="https://github.com/Sai9876" target="_blank">github.com/Sai9876</a></div>
+          </div>
+
+          <div style="height:12px"></div>
+          <div class="section-title"><span class="pill">Certifications</span></div>
+          <div class="meta">Python Basics (Skillrack), SQL Basics (Skillrack)</div>
+
+          <div style="height:12px"></div>
+          <button class="btn" id="downloadResume">Download Resume (PDF)</button>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="card">
+          <div class="section-title"><span class="pill">Quick Links</span></div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <a class="btn" href="#projects">See projects</a>
+            <a class="btn" href="mailto:sairamvijay9876@gmail.com">Message me</a>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>Made with ❤️ • Coimbatore</div>
+      <div class="copy" id="copyMail">Copy Email</div>
+    </footer>
+  </div>
+
+  <script>
+    // small interactions
+    const toggle = document.getElementById('toggleTheme');
+    toggle.addEventListener('click', ()=>{
+      if(document.documentElement.style.getPropertyValue('--bg') === ''){
+        document.documentElement.style.setProperty('--bg','#ffffff');
+        // naive light-mode flip (keeps dark look by default); you can expand
+        alert('Theme toggle — placeholder. Want light theme? I can add a full system.');
+      } else {
+        document.documentElement.style.removeProperty('--bg');
+        alert('Theme toggled (demo). Tell me if you want a full light/dark mode implemented.');
+      }
+    });
+
+    document.getElementById('copyMail').addEventListener('click', async ()=>{
+      try{await navigator.clipboard.writeText('sairamvijay9876@gmail.com');alert('Email copied to clipboard!');}catch(e){alert('Copy failed — manually copy: sairamvijay9876@gmail.com')}
+    });
+
+    document.getElementById('downloadResume').addEventListener('click', ()=>{
+      // If you host the resume alongside this page, update the URL below to the hosted PDF path.
+      const resumeUrl = './Sais_resume.pdf';
+      window.open(resumeUrl,'_blank');
+      alert('If resume does not open, upload the PDF to your hosting and update the path in the download button.');
+    });
+  </script>
+</body>
+</html>

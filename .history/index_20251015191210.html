@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sairam V — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <!-- Cursor glow (JS will create if missing) -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">
+        <div class="logo-avatar">SV</div>
+        <div class="logo-text">
+          <div class="name">Sairam V</div>
+          <div class="role">Python Full Stack Developer</div>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+       <!---<a href="#soft">Soft Skills</a>-->
+        <a href="#projects">Projects</a>
+        <!--<a href="#courses">Courses</a>-->
+        <a href="#certs">Certifications</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon" aria-pressed="false">☀️ Light</button>
+        <!--<a id="resume-btn" class="btn-primary" href="#" role="button">Download Resume</a>-->
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO / HOME -->
+    <section id="home" class="section hero-grid reveal" aria-label="Home">
+  <div class="hero-left">
+    <h1 id="hero-title">Hey, I'm <span class="accent">Sai</span></h1>
+    <p id="hero-subtitle" class="lead">
+      Python Full Stack Developer — Software developer 
+    </p>
+    <div class="cta-row">
+      <a class="btn-primary" id="hire-me" href="#contact">Hire Me</a>
+      <a class="btn-ghost" href="#projects">See Projects</a>
+    </div>
+    
+  </div>
+
+
+
+      <aside class="profile-card">
+        <div class="profile-border">
+          <!-- replace src with your actual photo -->
+          <img src="portfolio.jpeg" alt="Sairam V photo">
+        </div>
+        <div class="profile-meta">
+          <div class="p-name">Sairam V</div>
+          <div class="p-role muted">Python Full Stack Developer</div>
+          <div class="p-links">
+            <a href="https://github.com/Sai9876" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/sairam-v-634315285/" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-grid reveal" aria-label="About">
+      <div class="about-text card">
+        <div class="section-title">About</div>
+        <p>I am a passionate Python Full Stack Developer with expertise in Core Python, Django REST Framework, Flask, and MySQL. I enjoy building scalable web platforms, REST APIs, and desktop applications (Tkinter) that solve real-world problems.Through projects like Smart Bus Ticketing System and HireHive (AI-powered ATS), I have gained practical experience in combining technical skills with user-focused design.
+As an NSS Volunteer, I contributed to community service by planting 100+ trees, which strengthened my teamwork and social responsibility.
+Known for being a quick learner with strong time management skills, I continuously adapt to challenges and focus on delivering impactful, high-quality solutions in a collaborative environment.</p>
+        <ul class="about-list">
+          <li>Strong debugging & deployment experience</li>
+          <li>Worked on resume parsing, JWT auth, Celery tasks & OpenAI integration</li>
+          <li>Desktop apps with Tkinter + MySQL</li>
+        </ul>
+      </div>
+
+      <!--<div class="card about-stats">
+        <div class="stat">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">Projects (Industry / Capstone)</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">B.E</div>
+          <div class="stat-label">Computer Science — United Institute of Technology</div>
+        </div>-->
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section id="skills" class="section reveal">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+
+    <!-- FRONTEND -->
+    <h3 class="sub-heading">Frontend</h3>
+    <div class="skills-grid">
+      <div class="skill-card" data-level="Beginner" data-percent="70">
+        <h4>HTML</h4>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill-card" data-level="Beginner" data-percent="65">
+        <h4>CSS</h4>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill-card" data-level="Beginner" data-percent="60">
+        <h4>Bootstrap</h4>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill-card" data-level="Beginner" data-percent="50">
+        <h4>JavaScript</h4>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill-card" data-level="Beginner" data-percent="55">
+        <h4>React.js</h4>
+        <div class="skill-bar"><span></span></div>
+      </div>
+    </div>
+
+    <!-- BACKEND -->
+    <h3 class="sub-heading">Backend</h3>
+    <div class="skills-grid">
+      <div class="skill-card" data-level="Intermediate" data-percent="85">
+        <h4>Python</h4>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill-card" data-level="Beginner" data-percent="75">
+        <h4>Django</h4>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill-card" data-level="Beginner" data-percent="70">
+        <h4>Flask</h4>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill-card" data-level="Beginner" data-percent="65">
+        <h4>REST API</h4>
+        <div class="skill-bar"><span></span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- EDUCATION -->
+    <section id="education" class="section reveal">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+
+    <div class="edu-card" style="--clr:#3B82F6;--bg:rgba(59,130,246,0.08);">
+      <div class="edu-icon">🎓</div>
+      <div class="edu-info">
+        <h3>Bachelor of Engineering – Computer Science and Engineering</h3>
+        <p class="edu-school">United Institute of Technology</p>
+        <p class="edu-desc">Comprehensive study in computer science fundamentals, software engineering, and modern development practices.</p>
+      </div>
+      <div class="edu-score">70%</div>
+    </div>
+
+    <div class="edu-card" style="--clr:#10B981;--bg:rgba(16,185,129,0.08);">
+      <div class="edu-icon">🏫</div>
+      <div class="edu-info">
+        <h3>Higher Secondary Certificate (12th Grade)</h3>
+        <p class="edu-school">Dr. P.G.V Matriculation Hr. Sec. School</p>
+        <p class="edu-desc">Completed higher secondary education with focus on science and mathematics.</p>
+      </div>
+      <div class="edu-score">77%</div>
+    </div>
+
+    <div class="edu-card" style="--clr:#8B5CF6;--bg:rgba(139,92,246,0.08);">
+      <div class="edu-icon">📘</div>
+      <div class="edu-info">
+        <h3>Secondary School Certificate 10th</h3>
+        <p class="edu-school">Dr. P.G.V Matriculatio Hr. Sec. School</p>
+        <p class="edu-desc">Completed secondary education with strong foundation in core subjects.</p>
+      </div>
+      <div class="edu-score">64%</div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- SOFT SKILLS -->
+    <section id="soft" class="section reveal">
+      <div class="section-title">Soft Skills</div>
+      <div class="card">
+        <ul class="about-list">
+          <li>Communication & Teamwork</li>
+          <li>Problem solving & Debugging</li>
+          <li>Attention to detail</li>
+          <li>Quick learner</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <div class="section-title">Projects</div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card card reveal" tabindex="0">
+          <div class="thumb parallax" data-speed="0.04">
+            <img src="assets/hirehive-thumb.jpg" alt="HireHive project thumbnail">
+            <div class="overlay">
+              <div class="project-actions">
+                <a class="view-btn" href="#" target="_blank">Live</a>
+                <a class="code-btn" href="#" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+          <div style="padding:12px">
+            <h4>HireHive — Django + React</h4>
+            <div class="muted">JWT auth, role dashboards, resume parsing, Celery + Redis, OpenAI features.</div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card card reveal" tabindex="0">
+          <div class="thumb parallax" data-speed="0.02">
+            <img src="assets/bus-ticket-thumb.jpg" alt="Smart Bus Ticketing">
+            <div class="overlay">
+              <div class="project-actions">
+                <a class="view-btn" href="#">Demo</a>
+                <a class="code-btn" href="#">Code</a>
+              </div>
+            </div>
+          </div>
+          <div style="padding:12px">
+            <h4>Smart Bus Ticketing — Desktop App</h4>
+            <div class="muted">Tkinter + MySQL, QR tickets, PDF generation, voice input.</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section id="courses" class="section reveal">
+      <div class="section-title">Courses</div>
+      <div class="card">
+        <ul class="course-list">
+          <li>Full Stack Web Development — Refinement Software Solution</li>
+          <li>Python Basics — Skillrack</li>
+          <li>SQL Basics — Skillrack</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs" class="section reveal">
+      <div class="section-title">Certifications</div>
+      <div class="cert-grid">
+        <div class="cert card">Python Basics (Skillrack)</div>
+        <div class="cert card">SQL Basics (Skillrack)</div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <section id="contact" class="section reveal">
+      <div class="section-title">Contact</div>
+      <div class="card">
+        <p>Email: <a href="mailto:sairamvijay9876@gmail.com">sairamvijay9876@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918610432033">+91 86104 32033</a></p>
+        <div style="margin-top:8px">
+          <a class="btn-ghost" href="https://github.com/Sai9876" target="_blank">GitHub</a>
+          <a class="btn-ghost" href="https://www.linkedin.com/in/sairam-v-634315285/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="muted">Made with ❤️ • Coimbatore</div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="btn-icon" aria-label="Back to top" title="Back to top">↑</button>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Sairam V — Python Full Stack Developer portfolio">
+  <title>Sairam V — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <!-- Cursor glow (JS will create if missing) -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">
+        <div class="logo-avatar">SV</div>
+        <div class="logo-text">
+          <div class="name">Sairam V</div>
+          <div class="role">Python Full Stack Developer</div>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <!--<a href="#soft">Soft Skills</a>-->
+        <a href="#projects">Projects</a>
+        <!--<a href="#courses">Courses</a>-->
+        <a href="#certs">Certifications</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon" aria-pressed="false">☀️ Light</button>
+        <!--<a id="resume-btn" class="btn-primary" href="#" role="button">Download Resume</a>-->
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO / HOME -->
+    <section id="home" class="section hero-grid reveal" aria-label="Home">
+      <div class="hero-left">
+        <h1 id="hero-title">Hey, I'm <span class="accent">Sai</span></h1>
+        <p id="hero-subtitle" class="lead">
+          Python Full Stack Developer — Software developer 
+        </p>
+        <div class="cta-row">
+          <a class="btn-primary" id="hire-me" href="#contact">Hire Me</a>
+          <a class="btn-ghost" href="#projects">See Projects</a>
+        </div>
+      </div>
+
+      <aside class="profile-card">
+        <div class="profile-border">
+          <!-- replace src with your actual photo -->
+          <img src="portfolio.jpeg" alt="Sairam V photo">
+        </div>
+        <div class="profile-meta">
+          <div class="p-name">Sairam V</div>
+          <div class="p-role muted">Python Full Stack Developer</div>
+          <div class="p-links">
+            <a href="https://github.com/Sai9876" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/sairam-v-634315285/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-grid reveal" aria-label="About">
+      <div class="about-text card animated-section">
+        <div class="section-title animate-title">About</div>
+        <p class="animate-lines">
+          I am a passionate <span class="accent">Python Full Stack Developer</span> with expertise in Core Python, Django REST Framework, Flask, and MySQL. 
+          I enjoy building scalable web platforms, REST APIs, and desktop applications (Tkinter) that solve real-world problems.
+          Through projects like <strong>Smart Bus Ticketing System</strong> and <strong>HireHive (AI-powered ATS)</strong>, I have gained practical experience 
+          in combining technical skills with user-focused design.
+          As an <strong>NSS Volunteer</strong>, I contributed to community service by planting 100+ trees, which strengthened my teamwork and social responsibility.
+          Known for being a quick learner with strong time management skills, I continuously adapt to challenges and focus on delivering impactful, high-quality solutions 
+          in a collaborative environment.
+        </p>
+
+        <ul class="about-list animate-list">
+          <li>Strong debugging & deployment experience</li>
+          <li>Worked on resume parsing, JWT auth, Celery tasks & OpenAI integration</li>
+          <li>Desktop apps with Tkinter + MySQL</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section id="skills" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <!-- FRONTEND -->
+        <h3 class="sub-heading">Frontend</h3>
+        <div class="skills-grid">
+          <div class="skill-card" data-level="Beginner" data-percent="70">
+            <h4>HTML</h4>
+            <div class="skill-bar"><span></span></div>
+          </div>
+          <div class="skill-card" data-level="Beginner" data-percent="65">
+            <h4>CSS</h4>
+            <div class="skill-bar"><span></span></div>
+          </div>
+          <div class="skill-card" data-level="Beginner" data-percent="60">
+            <h4>Bootstrap</h4>
+            <div class="skill-bar"><span></span></div>
+          </div>
+          <div class="skill-card" data-level="Beginner" data-percent="50">
+            <h4>JavaScript</h4>
+            <div class="skill-bar"><span></span></div>
+          </div>
+          <div class="skill-card" data-level="Beginner" data-percent="55">
+            <h4>React.js</h4>
+            <div class="skill-bar"><span></span></div>
+          </div>
+        </div>
+
+        <!-- BACKEND -->
+        <h3 class="sub-heading">Backend</h3>
+        <div class="skills-grid">
+          <div class="skill-card" data-level="Intermediate" data-percent="85">
+            <h4>Python</h4>
+            <div class="skill-bar"><span></span></div>
+          </div>
+          <div class="skill-card" data-level="Beginner" data-percent="75">
+            <h4>Django</h4>
+            <div class="skill-bar"><span></span></div>
+          </div>
+          <div class="skill-card" data-level="Beginner" data-percent="70">
+            <h4>Flask</h4>
+            <div class="skill-bar"><span></span></div>
+          </div>
+          <div class="skill-card" data-level="Beginner" data-percent="65">
+            <h4>REST API</h4>
+            <div class="skill-bar"><span></span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+
+        <div class="edu-card" style="--clr:#3B82F6;--bg:rgba(59,130,246,0.08);">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <h3>Bachelor of Engineering – Computer Science and Engineering</h3>
+            <p class="edu-school">United Institute of Technology</p>
+            <p class="edu-desc">Comprehensive study in computer science fundamentals, software engineering, and modern development practices.</p>
+          </div>
+          <div class="edu-score">77%</div>
+        </div>
+
+        <div class="edu-card" style="--clr:#10B981;--bg:rgba(16,185,129,0.08);">
+          <div class="edu-icon">🏫</div>
+          <div class="edu-info">
+            <h3>Higher Secondary Certificate 12th</h3>
+            <p class="edu-school">Maha Jana Higher Sec School</p>
+            <p class="edu-desc"></p>
+          </div>
+          <div class="edu-score">84%</div>
+        </div>
+
+        <div class="edu-card" style="--clr:#8B5CF6;--bg:rgba(139,92,246,0.08);">
+          <div class="edu-icon">📘</div>
+          <div class="edu-info">
+            <h3>Secondary School Certificate 10th</h3>
+            <p class="edu-school">Maha Jana Higher Sec School - Coimbatore</p>
+            <p class="edu-desc"></p>
+          </div>
+          <div class="edu-score">78.4%</div>
+        </div>
+
+      </div>
+    </section>
+<!-- PROJECTS -->
+<section id="projects" class="section reveal">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="project-row">
+      <div class="project-img">
+        <img src="assets/images/heroimage.png" alt="HireHive Project Thumbnail">
+      </div>
+
+      <div class="project-content">
+        <h3>HireHive — Full Stack Web App</h3>
+        <p class="muted">
+          A full-stack AI-powered Applicant Tracking System (ATS) built with<strong> Django, DRF, MySQL, Celery, and Redis. </strong>
+            The platform supports secure authentication (JWT) for candidates and recruiters, <b>resume parsing & job matching,</b> and automated tracking of applications (Pending → Shortlisted → Interview → Hired). Recruiters can post jobs, schedule interviews, and send invites directly. Integrated AI-based question & quiz generation using OpenAI API to enhance candidate preparation.<strong> The project simplifies hiring workflows and improves recruiter productivity.
+        </p>
+
+        <h4 class="tech-title">Technologies & Skills</h4>
+        <div class="tech-tags">
+          <span>Django</span>
+          <span>React</span>
+          <span>REST API</span>
+          <span>MySQL</span>
+          <span>OpenAI API</span>
+        </div>
+
+        <div class="project-btns">
+          <a href="https://hirehive-fijd.onrender.com/" target="_blank" class="btn-primary">Explore Project</a>
+          <a href="https://github.com/Sai9876/Ai-career-companion" target="_blank" class="btn-ghost">View Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-row reverse">
+      <div class="project-img">
+        <img src="assets/images/bus_thumbnail.png" alt="Smart Bus Ticketing App">
+      </div>
+
+      <div class="project-content">
+        <h3>Smart Bus Ticketing — Desktop Application</h3>
+        <p class="muted">
+          An interactive desktop ticketing application built using 
+          <strong>Python Tkinter</strong> and <strong>MySQL</strong>. 
+          It automates fare calculations, supports <strong>QR payments</strong>, 
+          and integrates <strong>voice recognition</strong> for input. 
+          Generates printable <strong>PDF tickets</strong> for offline use.
+        </p>
+
+        <h4 class="tech-title">Technologies & Skills</h4>
+        <div class="tech-tags">
+          <span>Python</span>
+          <span>Tkinter</span>
+          <span>MySQL</span>
+          <span>Voice Recognition</span>
+          <span>PDF Generator</span>
+        </div>
+
+        <div class="project-btns">
+          <a href="https://github.com/Sai9876/Smart-bus-ticketing-system/tree/main/SmartBus" target="_blank" class="btn-primary">Explore Project</a>
+          <a href="https://github.com/Sai9876/Smart-bus-ticketing-system" target="_blank" class="btn-ghost">View Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- SOFT SKILLS -->
+    <section id="soft" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Soft Skills</h2>
+        <div class="soft-grid">
+          <div class="soft-card" data-delay="0.1s">
+            <div class="soft-icon">💬</div>
+            <p>Communication & Teamwork</p>
+          </div>
+
+          <div class="soft-card" data-delay="0.2s">
+            <div class="soft-icon">🧩</div>
+            <p>Problem Solving & Debugging</p>
+          </div>
+
+          <div class="soft-card" data-delay="0.3s">
+            <div class="soft-icon">🎯</div>
+            <p>Attention to Detail</p>
+          </div>
+
+          <div class="soft-card" data-delay="0.4s">
+            <div class="soft-icon">⚡</div>
+            <p>Quick Learner</p>
+          </div>
+          <div class="soft-card" data-delay="0.4s">
+            <div class="soft-icon">⌚</div>
+            <p>Time Management</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- COURSES -->
+<section id="courses" class="section reveal">
+  <div class="container">
+    <h2 class="section-title">Courses</h2>
+
+    <div class="course-grid">
+
+      <div class="course-card" style="--clr:#3B82F6;--bg:rgba(59,130,246,0.08);">
+        <div class="course-icon">💻</div>
+        <div class="course-info">
+          <h3>Full Stack Web Development</h3>
+          <p class="org">Refinement Software Solution</p>
+          <p class="muted">Completed intensive hands-on training covering Python, Django, REST API, HTML, CSS, JS, React, and MySQL.</p>
+        </div>
+        <div class="course-period">May 2024 – Sep 2024</div>
+      </div>
+
+      
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certs" class="section reveal">
+  <div class="container">
+    <h2 >Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-card" style="--clr:#3B82F6;"  >📰Python Basics (Skillrack)<br><br>
+     <a href="https://www.skillrack.com/faces/free/certificate.xhtml?t=cert&id=454831&key=UKJ">View Certificate</a>
+
+      </div>
+      <div class="cert-card" style="--clr:#8B5CF6;">📰SQL Basics (Skillrack)<br><br>
+        <a href="https://www.skillrack.com/faces/free/certificate.xhtml?t=cert&id=454881&key=IUS">View certificate</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTACT / FOOTER -->
+  
+<section id="contact" class="section reveal">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-grid">
+      <div class="contact-info card">
+        <p><strong>Let’s build something together 🚀</strong></p>
+        <p class="muted">
+          Whether you have a project idea, collaboration proposal, or just want to say hi — I’d love to connect.
+        </p>
+        <p><strong>Email:</strong> <a href="mailto:sairamvijay9876@gmail.com">sairamvijay9876@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+918610432033">+91 86104 32033</a></p>
+        <div class="contact-socials">
+          <a href="https://github.com/Sai9876" target="_blank" class="btn-ghost">GitHub</a>
+          <a href="https://www.linkedin.com/in/sairam-v-634315285/" target="_blank" class="btn-ghost">LinkedIn</a>
+        </div>
+      </div>
+
+      <form 
+        class="contact-form card" 
+        action="https://formsubmit.co/sairamvijay9876@gmail.com" 
+        method="POST"
+      >
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://your-portfolio-link.com/thanks.html">
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>Made  By<span class="heart"></span> <b> Sairam. © 2025All rights reserved.</b></p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#home" class="to-top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="btn-icon" aria-label="Back to top" title="Back to top">↑</button>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
