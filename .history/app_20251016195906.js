@@ -287,7 +287,7 @@ window.addEventListener('load', unifiedScrollAnimations);
 /* =====================
    MOBILE NAV TOGGLE
 ===================== */
-/*(function mobileNavToggle() {
+/(function mobileNavToggle() {
   const nav = qs('.main-nav');
   const headerInner = qs('.header-inner');
   if (!nav || !headerInner) return;
